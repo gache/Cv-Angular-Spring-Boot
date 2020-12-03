@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "CvAngularSpringBoot"
+    }
+  },
+  "defaultProject": "CvAngularSpringBoot",
+  "cli": {
+    "analytics": false
+  }
 }
