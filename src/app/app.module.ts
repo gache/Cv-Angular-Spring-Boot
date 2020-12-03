@@ -14,6 +14,7 @@ import { ExperiencesComponent } from './components/experiences/experiences.compo
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { DetailExperienceComponent } from './components/detail-experience/detail-experience.component';
+import { PropoMoiComponent } from './components/propo-moi/propo-moi.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { DetailExperienceComponent } from './components/detail-experience/detail
     ExperiencesComponent,
     FooterComponent,
     HomeComponent,
-    DetailExperienceComponent
+    DetailExperienceComponent,
+    PropoMoiComponent
   ],
   imports: [
     BrowserModule,

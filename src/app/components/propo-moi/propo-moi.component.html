@@ -1,0 +1,82 @@
+<!-- Creation du profil -->
+<section class="profil p-y-2 about-section section-padding">
+  <div class="container-fluid ">
+    <h1 style="Visibility: visible;" [ngsReveal]="{
+                reset: true,
+                duration: 2000,
+                interval: 600
+              }"> À propos de moi</h1>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class=" definition col-md-8 col-md-pull-4">
+        <div class=" objectif " style="Visibility: visible;">
+          <h2 class="title animated fast fadeInLeft"> Objectif </h2>
+          <p class=" text-justify"> Mon expérience dans le support informatique m'a permis de débouter ma carrière dans
+            le monde de l'informatique. Souhaitant me réorienter vers le développement . J'ai entrepris une reconversion
+            professionnelle vers 2018. La formation
+            que j'ai suivi pour devenir développeur a fait que conforter mon choix et ma motivation. </p>
+        </div>
+
+        <div class=" activite " style="Visibility: visible;">
+          <h2 class="title animated fast fadeInLeft"> Mes activités </h2>
+          <p class=" text-justify  ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nam laborum nesciunt
+            in a optio eos, animi libero sit placeat? Repellat quos quibusdam magni, cupiditate aspernatur excepturi
+            reprehenderit dolores est.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-md-push-8 py-5">
+        <div class="card w-100">
+          <img class="card-img-top" src="assets/img/photo3.jpg" alt="Erick Franco">
+          <div class="card-body">
+            <h3 class="card-title text-center "> {{ informationP.nom }} </h3>
+            <p class="card-text text-left"> <strong>Ville: </strong> {{ informationP.ville }}</p>
+            <hr class="uk-width-8-10">
+            <p class="card-text text-left"> <strong>Nationalité: </strong> {{ informationP.nationalite }}</p>
+            <hr class="uk-width-8-10">
+            <p class="card-text text-left"> <strong>Téléphone: </strong> {{ informationP.telephone }}</p>
+            <hr class="uk-width-8-10">
+            <p class="card-text text-left"><strong>Email: </strong> {{ informationP.mail }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="facts-section text-center py-5" data-stellar-vertical-offset="50" data-stellar-background-ratio="0.2"
+  style="background-position: 50% -3.7125px;">
+
+  <div class="tt-overlay-bg">
+    <div class="container-fluid">
+      <div class="row align-content-center">
+        <div class="col-md-12">
+          <div class="count-wrap row">
+            <div class="col-sm-3 col-xs-6">
+              <i class="fa fa-flask fa-2x" aria-hidden="true"></i>
+              <h3>5</h3>
+              <p>Années d'études</p>
+            </div>
+            <div class="col-sm-3 col-xs-6">
+              <i class="fas fa-code fa-2x" aria-hidden="true"></i>
+              <h3>5</h3>
+              <p>Lignes de code</p>
+            </div>
+            <div class="col-sm-3 col-xs-6">
+              <i class="fa fa-thumbs-up fa-2x" aria-hidden="true"></i>
+              <h3>5</h3>
+              <p>Projets réalisés</p>
+            </div>
+            <div class="col-sm-3 col-xs-6">
+              <i class="	fa fa-spinner fa-2x" aria-hidden="true"></i>
+              <h3>5</h3>
+              <p>Temps passé</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
