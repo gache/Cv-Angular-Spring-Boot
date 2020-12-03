@@ -1,0 +1,53 @@
+<section class="profil py-5 about-section section-padding wrapper">
+    <div class="container">
+        <h1 class="text-center" [ngsReveal]="{
+          reset: true,
+          duration: 500,
+          interval: 600}">Parcours</h1>
+        <div class="row">
+            <div class="col-md-12  ">
+                <h2 class=" text-center m-auto py-5" [ngsReveal]="{
+                  reset: true,
+                  duration: 1000,
+                  interval: 600}">EXPÉRIENCES PROFESSIONNELLES</h2>
+                <div class="Timeline m-auto py-3 ">
+                    <ul>
+                        <li *ngFor="let item of listExperience; let i = index">
+                            <div class="content ">
+                                <h3 [ngsReveal]="{ 
+                                  reset: true,
+                                  duration: 550,
+                                  easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)',
+                                  scale: 0.85}">{{ item.titrePoste }}</h3>
+                                <p [ngsReveal]="{
+                                  reset: true,
+                                  duration: 1500,
+                                  easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)',
+                                  scale: 0.85}">
+                                    {{ item.description }}
+                                    <br>
+                                </p>
+                                <br>
+                                <a [routerLink]="[ '/detail', i ] " class="btn                   btn-outline-primary" [ngsReveal]="{
+                                  reset: true,
+                                  duration: 2000,
+                                  delay: 500,
+                                  easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)',
+                                  scale: 0.85}"> Savoir plus </a>
+
+                                <div class="time" [ngsReveal]="{ 
+                                  reset: true,
+                                  duration: 600,
+                                  easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)',
+                                  scale: 0.85}">
+                                    <h4>{{ item.date }}</h4>
+                                </div>
+                            </div>
+                        </li>
+                        <div style="clear: both;"></div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

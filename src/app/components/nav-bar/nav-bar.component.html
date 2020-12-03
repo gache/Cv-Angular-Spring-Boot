@@ -1,0 +1,36 @@
+<!-- Crreation du Menu de Navigacion avec Bootstrap -->
+<header class="tête">
+    <section class="fond">
+        <div class="container-fluid">
+            <nav class="menu navbar fixed-top navbar-expand-md" [ngClass]="{ inImage: isInImage, outImage: !isInImage }">
+                <a class="navbar-brand" href="#">Erick Franco</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-principal" aria-label="Toggle navigation" aria-controls="nav-principal" aria-expanded="false">
+          <span class="navbar-toggler-icon">
+            <i class="fas fa-bars" style="color:rgba(233, 33, 99, 1); font-size:28px;">
+            </i>
+          </span>
+        </button>
+                <div class="collapse navbar-collapse w-100" id="nav-principal">
+                    <ul class=" nav navbar-nav ml-auto mt-2 mt-md-0 flex-sm-row ">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#" (click)="scrollTo('profil', $event)">ACCUEIL
+              </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" (click)="scrollTo('propo', $event)">PROFIL</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" (click)="scrollTo('parcours', $event)">PARCOURS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" (click)="scrollTo('competences', $event)">COMPÉTENCES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" (click)="scrollTo('contact', $event)">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+</header>
