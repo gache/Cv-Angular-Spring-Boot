@@ -18,9 +18,7 @@ export class ExperiencesComponent implements OnInit {
       .subscribe( resp => {
         this.listExperience = resp;
         console.log( this.listExperience );
-
-
-      } )
+      } );
 
   }
 
