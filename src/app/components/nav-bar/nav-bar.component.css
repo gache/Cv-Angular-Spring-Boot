@@ -1,0 +1,85 @@
+/* Menu de navigation */
+
+a {
+    text-transform: uppercase;
+}
+
+.nav {
+    position: sticky;
+    top: 0;
+    padding: 0px !important;
+}
+
+.navbar-brand {
+    color: rgba(255, 255, 255);
+    font-family: "Lato", sans-serif;
+    transition: color 1000ms linear;
+    transition: background-color 100ms linear;
+    font-weight: bold;
+    padding: 3px;
+    font-size: 1.9rem;
+}
+
+.inImage .navbar-brand {
+    color: rgba(233, 33, 99, 1);
+    background-color: transparent;
+    border-radius: 10%;
+}
+
+
+/* les link de navigation */
+
+.nav-link {
+    color: rgba(233, 33, 99, 1);
+    font-size: 1.9rem;
+}
+
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+
+.navbar-nav>li>a {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.fixed-top {
+    transition: background-color 1000ms linear;
+}
+
+.fixed-top.inImage {
+    background: transparent;
+}
+
+.fixed-top.outImage {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.navbar-nav .nav-link {
+    color: rgba(255, 255, 255);
+    text-align: center;
+    transition: all 0.5s ease;
+    transition: color 500ms linear;
+}
+
+.inImage .navbar-nav .nav-link {
+    color: rgba(233, 33, 99, 1);
+    text-shadow: 0px 0px 0px #000, 0px 0px 5px #fff;
+    border-radius: 15px;
+}
+
+.navbar-nav .show>.nav-link,
+.navbar-nav .active>.nav-link,
+.navbar-nav .nav-link.show,
+.navbar-nav .nav-link.active {
+    color: rgba(255, 255, 255, 0.95);
+    background: #eb1f41e8;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+    color: rgba(253, 253, 253, 0.67);
+    background: #eb1f41e8;
+}
