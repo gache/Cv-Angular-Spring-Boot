@@ -1,0 +1,41 @@
+<section class="profil py-5 about-section section-padding wrapper">
+    <div class="container">
+        <!-- <h2 class="text-center m-auto py-3">Parcours</h2> -->
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-center m-auto py-3" [ngsReveal]="{
+                  reset: true,
+                  duration: 1000,
+                  interval: 500}">Diplôme et Formations</h2>
+                <div class="Timeline">
+                    <ul>
+                        <li *ngFor="let items of listDiplomes">
+                            <div class="content">
+                                <h3 [ngsReveal]="{ 
+                                  reset: true,
+                                  duration: 550,
+                                  easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)',
+                                  scale: 0.85}">{{ items.nomDiplome }}</h3>
+                                <p [ngsReveal]="{
+                                  reset: true,
+                                  duration: 1500,
+                                  easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)',
+                                  scale: 0.85}">
+                                    {{ items.description }}
+                                </p>
+                                <div class="time" [ngsReveal]="{ 
+                                  reset: true,
+                                  duration: 600,
+                                  easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)',
+                                  scale: 0.85}">
+                                    <h4>{{ items.annee }}</h4>
+                                </div>
+                            </div>
+                        </li>
+                        <div style="clear: both;"></div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

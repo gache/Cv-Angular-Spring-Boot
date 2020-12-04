@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+section {
+    background-color: #f2f2f2;
+}
+
+h1 {
+    font-size: 2.688em;
+}
+
+
+/* Bouton */
+
+.btn-outline-primary {
+    font-family: "Lato", sans-serif;
+    font-size: 17px;
+    border-radius: 80px;
+    text-align: center;
+    border: 3px solid rgba(233, 33, 99, 1);
+    display: inline-flex;
+    text-decoration: none;
+    color: rgba(233, 33, 99, 1) !important;
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+}
+
+.btn-outline-primary::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(233, 33, 99, 1) !important;
+    top: -100%;
+    left: 0;
+    z-index: -1;
+    transition: 0.3s;
+}
+
+.btn-outline-primary::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(233, 33, 99, 1) !important;
+    top: -100%;
+    left: 0;
+    z-index: -1;
+    transition: 0.3s;
+}
+
+.btn-outline-primary:hover {
+    color: #fff;
+}
+
+.btn-outline-primary:hover:before {
+    top: 0;
+}
+
+.btn-outline-primary:hover:after {
+    top: 0;
+}
+
+.Timeline {
+    position: relative;
+    margin: 50px auto;
+    padding: 24px;
+    max-width: 1000px;
+    box-sizing: border-box;
+}
+
+.Timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background: #c5c5c5;
+    border: solid transparent;
+}
+
+.Timeline ul {
+    margin: 0;
+    padding: 0;
+}
+
+.Timeline ul li {
+    list-style: none;
+    position: relative;
+    width: 50%;
+    padding: 20px 50px;
+    box-sizing: border-box;
+}
+
+.Timeline ul li:nth-child(odd) {
+    float: left;
+    text-align: right;
+    clear: both;
+}
+
+.Timeline ul li:nth-child(even) {
+    float: right;
+    text-align: left;
+    clear: both;
+}
+
+.content {
+    /* padding-bottom: 20px; */
+    /* border: 5px solid; */
+    /* border-radius: 17px;
+    visibility: visible; */
+    /* background: #88b7d5;
+    border: 4px solid #c2e1f5; */
+    margin-bottom: 20px;
+}
+
+.Timeline ul li:nth-child(odd):before {
+    content: '';
+    position: absolute;
+    top: 24px;
+    right: -7px;
+    width: 10px;
+    height: 10px;
+    background: rgba(233, 33, 99, 1);
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.2);
+}
+
+.Timeline ul li:nth-child(even):before {
+    content: '';
+    position: absolute;
+    top: 24px;
+    left: -3px;
+    width: 10px;
+    height: 10px;
+    background: rgba(233, 33, 99, 1);
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.2);
+}
+
+.Timeline ul li h3 {
+    margin: 5px 0 15px;
+    padding: 0;
+    font-weight: 600;
+    color: rgba(233, 33, 99, 1);
+}
+
+.Timeline ul li p {
+    margin: 10px 0 0;
+    padding: 12;
+    text-align: justify;
+}
+
+.Timeline ul li .time h4 {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+.Timeline ul li:nth-child(odd) .time {
+    position: absolute;
+    top: 12px;
+    right: -165px;
+    margin: 0;
+    padding: 8px 16px;
+    background: rgba(233, 33, 99, 1);
+    color: #fff;
+    border-radius: 18px;
+    box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.3);
+}
+
+.Timeline ul li:nth-child(even) .time {
+    position: absolute;
+    top: 12px;
+    left: -165px;
+    margin: 0;
+    padding: 8px 16px;
+    background: rgba(233, 33, 99, 1);
+    color: #fff;
+    border-radius: 18px;
+    box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.3);
+}

@@ -19,6 +19,7 @@ import { AccueilComponent } from './components/accueil/accueil.component';
 import { ReseauxComponent } from './components/reseaux/reseaux.component';
 import { LangageInforComponent } from './components/langage-infor/langage-infor.component';
 import { ProjetsComponent } from './components/projets/projets.component';
+import { DiplomesComponent } from './components/diplomes/diplomes.component';
 
 @NgModule( {
   declarations: [
@@ -32,7 +33,8 @@ import { ProjetsComponent } from './components/projets/projets.component';
     AccueilComponent,
     ReseauxComponent,
     LangageInforComponent,
-    ProjetsComponent
+    ProjetsComponent,
+    DiplomesComponent
   ],
   imports: [
     BrowserModule,
