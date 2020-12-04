@@ -13,25 +13,18 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { ExperiencesComponent } from './components/experiences/experiences.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
-<<<<<<< HEAD
-=======
-import { DetailExperienceComponent } from './components/detail-experience/detail-experience.component';
 import { PropoMoiComponent } from './components/propo-moi/propo-moi.component';
->>>>>>> develop
+import { DetailExperienceComponent } from './components/detail-experience/detail-experience.component';
 
-@NgModule({
+@NgModule( {
   declarations: [
     AppComponent,
     NavBarComponent,
     ExperiencesComponent,
     FooterComponent,
-<<<<<<< HEAD
-    HomeComponent
-=======
     HomeComponent,
     DetailExperienceComponent,
     PropoMoiComponent
->>>>>>> develop
   ],
   imports: [
     BrowserModule,
@@ -43,5 +36,5 @@ import { PropoMoiComponent } from './components/propo-moi/propo-moi.component';
     NgsRevealConfig,
   ],
   bootstrap: [AppComponent]
-})
+} )
 export class AppModule { }
