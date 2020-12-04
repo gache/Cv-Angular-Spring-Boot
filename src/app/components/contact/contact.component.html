@@ -1,0 +1,137 @@
+<section class="photoFond text-center py-5" data-stellar-vertical-offset="50" data-stellar-background-ratio="0.2" style="background-position: 50% -3.7125px;">
+    <div class="tt-overlay-bg">
+        <div class="container-fl">
+            <p class="display-4" [ngsReveal]="{
+                  reset: true,
+                  duration: 3000,
+                  interval: 600
+                  }">
+                Je suis disponible pour toute réalisation d'un projet ou pour la collaboration à celui-ci.
+            </p>
+            <!-- <a href="#" class="btn btn-success btn-lg"> Contactez-moi</a> -->
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container wrapper">
+        <h1 class="py-5" style="visibility: visible;" [ngsReveal]="{
+              reset: true,
+              duration: 2000,
+              interval: 600
+              }">
+            contactez-moi
+        </h1>
+
+        <form class="container" [formGroup]="formulaire" (ngSubmit)="changement()">
+            <div>
+                <div class="form-group row">
+                    <label class="col-1 col-form-label "> Nom </label>
+                    <div class="col-md-5">
+                        <input class="form-control col-9" type="text" placeholder="Nom" formControlName="nom" />
+                        <!-- Message erreur quand l'utilisateur ne rempli pas les critères  -->
+                        <div class="alert-danger col-9" *ngIf="nom.invalid && (nom.dirty || nom.touched)">
+
+                            <div class="containerMessageError" *ngIf="nom.errors.required">
+                                {{ messageAlertNom }}
+                            </div>
+
+                            <div class="containerMessageError" *ngIf="nom.errors.minlength">
+                                {{ messageNom2 }}
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-1 col-form-label ">Prénom</label>
+                    <div class="col-md-5">
+                        <input class="form-control col-9" type="text" placeholder="Prénom" formControlName="prenom" />
+                        <!-- Message erreur quand l'utilisateur ne rempli pas les critères  -->
+                        <div class="alert-danger col-9" *ngIf="prenom.invalid && (prenom.dirty || prenom.touched)">
+
+                            <div class="containerMessageError" *ngIf="prenom.errors.required">
+                                {{ messageAlertPrenom }}
+                            </div>
+
+                            <div class="containerMessageError" *ngIf="prenom.errors.minlength">
+                                {{ messageNom2 }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-1 col-form-label ">Email</label>
+                <div class="col-md-5">
+                    <input class="form-control col-9" type="email" placeholder="lille@gmail.com" formControlName="mail" />
+                    <!-- Message erreur quand l'utilisateur ne rempli pas les critères  -->
+                    <div class="alert-danger col-9" *ngIf="mail.invalid && (mail.dirty || mail.touched)">
+
+                        <div class="containerMessageError" *ngIf="mail.errors.required">
+                            {{ messageAlertMail }}
+                        </div>
+
+                        <div class="containerMessageError" *ngIf="mail.errors.minlength">
+                            {{ messageAlertCaracter }}
+                        </div>
+                        <div class="containerMessageError" *ngIf="(mail.dirty || mail.touched) && mail.invalid && mail.errors.pattern ">
+                            {{ messageAlertMail3 }}
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-1 col-form-label ">Sujet</label>
+                <div class="col-md-5">
+                    <input class="form-control col-9" type="email" placeholder="Entretien d'embauche" formControlName="sujet" />
+                    <!-- Message erreur quand l'utilisateur ne rempli pas les critères  -->
+                    <div class="alert-danger col-9" *ngIf="sujet.invalid && (sujet.dirty || sujet.touched)">
+
+                        <div class="containerMessageError" *ngIf="sujet.errors.required">
+                            {{ messageAlertSujet }}
+                        </div>
+
+                        <div class="containerMessageError" *ngIf="sujet.errors.minlength">
+                            {{ messageNom2 }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group row ">
+                <label class="col-1 col-form-label message " for="message" rowspan="5">
+          Message</label>
+                <div class="col-md-5">
+                    <textarea class="form-control col-9 " id="message " rows="5" formControlName="message" placeholder="Nous aimerions vous contacter à fin de ....">
+                  </textarea>
+                    <!-- Message erreur quand l'utilisateur ne rempli pas les critères  -->
+                    <div class="alert-danger col-9" *ngIf="message.invalid && (message.dirty || message.touched)">
+
+                        <div class="containerMessageError" *ngIf="message.errors.required">
+                            {{ messageAlertMessage }}
+                        </div>
+
+                        <div class="containerMessageError" *ngIf="message.errors.minlength">
+                            {{ messageAlertCaracter }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group row ">
+                <label class="col-1 col-form-label ">&nbsp;</label>
+                <div class="input-group col-md-9 ">
+                    <button type="submit" class="btn btn-primary ">
+            Envoyer
+          </button>
+                </div>
+            </div>
+        </form>
+
+        {{ formulaire.valid }}
+    </div>
+</section>
