@@ -14,12 +14,13 @@ import { ExperiencesComponent } from './components/experiences/experiences.compo
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { PropoMoiComponent } from './components/propo-moi/propo-moi.component';
-import { DetailExperienceComponent } from './components/detail-experience/detail-experience.component';
+import { DetailExperienceComponent } from './components/detailExperience/detail-experience.component';
 import { AccueilComponent } from './components/accueil/accueil.component';
 import { ReseauxComponent } from './components/reseaux/reseaux.component';
 import { LangageInforComponent } from './components/langage-infor/langage-infor.component';
 import { ProjetsComponent } from './components/projets/projets.component';
 import { DiplomesComponent } from './components/diplomes/diplomes.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule( {
   declarations: [
@@ -34,7 +35,8 @@ import { DiplomesComponent } from './components/diplomes/diplomes.component';
     ReseauxComponent,
     LangageInforComponent,
     ProjetsComponent,
-    DiplomesComponent
+    DiplomesComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
