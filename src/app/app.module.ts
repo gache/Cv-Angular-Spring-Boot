@@ -18,6 +18,7 @@ import { DetailExperienceComponent } from './components/detail-experience/detail
 import { AccueilComponent } from './components/accueil/accueil.component';
 import { ReseauxComponent } from './components/reseaux/reseaux.component';
 import { LangageInforComponent } from './components/langage-infor/langage-infor.component';
+import { ProjetsComponent } from './components/projets/projets.component';
 
 @NgModule( {
   declarations: [
@@ -30,7 +31,8 @@ import { LangageInforComponent } from './components/langage-infor/langage-infor.
     PropoMoiComponent,
     AccueilComponent,
     ReseauxComponent,
-    LangageInforComponent
+    LangageInforComponent,
+    ProjetsComponent
   ],
   imports: [
     BrowserModule,
