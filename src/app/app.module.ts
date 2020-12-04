@@ -16,6 +16,7 @@ import { HomeComponent } from './components/home/home.component';
 import { PropoMoiComponent } from './components/propo-moi/propo-moi.component';
 import { DetailExperienceComponent } from './components/detail-experience/detail-experience.component';
 import { AccueilComponent } from './components/accueil/accueil.component';
+import { ReseauxComponent } from './components/reseaux/reseaux.component';
 
 @NgModule( {
   declarations: [
@@ -26,7 +27,8 @@ import { AccueilComponent } from './components/accueil/accueil.component';
     HomeComponent,
     DetailExperienceComponent,
     PropoMoiComponent,
-    AccueilComponent
+    AccueilComponent,
+    ReseauxComponent
   ],
   imports: [
     BrowserModule,
