@@ -1,6 +1,5 @@
-export interface DiplomeInterface {
+export interface LangageInterface {
   id: number;
-  nomDiplome: string;
-  description: string;
-  annee: string;
+  langageInformatique: string;
+  porcentage: string;
 }
