@@ -1,0 +1,69 @@
+section {
+    text-align: center;
+}
+
+
+/* photo de fond */
+
+.photo {
+    background: url(../../../assets/img/photo1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: absolute;
+    display: block;
+    max-width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+
+/*  mise en forme du text de la photo de fond avec la class .cv */
+
+.cv {
+    color: #eb1f41e8;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Mise en forme du text */
+
+h1,
+h2,
+button {
+    color: rgba(233, 33, 99, 1);
+    font-family: 'Merriweather Sans', sans-serif;
+    text-transform: capitalize;
+}
+
+
+/* Button */
+
+button {
+    padding: 15px 25px;
+    font-size: 30px;
+    border-radius: 80px;
+    text-transform: uppercase;
+    color: rgba(233, 33, 99, 1);
+    background: transparent;
+    border: 1px solid rgba(233, 33, 99, 1);
+    cursor: pointer;
+    box-shadow: 0 9px rgb(212, 33, 99);
+    outline: none;
+}
+
+button:hover {
+    transform: translateY(3px);
+    box-shadow: 0 2px rgb(212, 33, 99);
+}
+
+button:active {
+    transform: translateY(7px);
+    box-shadow: 0 1px rgb(212, 33, 99);
+}

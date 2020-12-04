@@ -1,58 +1,60 @@
 section {
-  background-color: #f2f2f2;
+    background-color: #f2f2f2;
 }
+
 
 /* Photo de fond */
 
 .facts-section {
-  background: url(../../../assets/img/digital.jpg) no-repeat center 50%;
-  background-size: cover;
-  background-attachment: fixed;
-  color: #f2f2f2;
-  overflow: hidden;
+    background: url(../../../assets/img/digital.jpg) no-repeat center 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #f2f2f2;
+    overflow: hidden;
 }
 
 h1 {
-  font-size: 2.688em;
-  font-family: "Lato", sans-serif;
-  text-align: center;
-  text-transform: none;
-  color: #2c3e50;
-  position: relative;
+    font-size: 2.688em;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    text-transform: none;
+    color: #2c3e50;
+    position: relative;
 }
 
 p {
-  display: block;
-  margin-top: 0;
+    display: block;
+    margin-top: 0;
 }
 
 .definition {
-  margin-top: 3rem;
+    margin-top: 3rem;
 }
 
 .title,
 strong {
-  color: rgba(233, 33, 99, 1);
+    color: rgba(233, 33, 99, 1);
 }
+
 
 /*  Contenedor flex */
 
 .container-flex {
-  max-width: 92%;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: nowrap;
+    max-width: 92%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 @media (max-width: 768px) {
-  .objectif {
-    flex: 0 0 70%;
-  }
-  .card {
-    flex: 0 0 30%;
-  }
+    .objectif {
+        flex: 0 0 70%;
+    }
+    .card {
+        flex: 0 0 30%;
+    }
 }
 
 .card {
-  background-color: #f2f2f2;
+    background-color: #f2f2f2;
 }

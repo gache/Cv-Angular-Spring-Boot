@@ -1,0 +1,34 @@
+<!-- Creation du titre de la page -->
+<section class="container photo text-center">
+    <div class="cv">
+        <!-- J'utulise la classe de Boostrap  pour afficher plus grand le tittre et la librarie ngsReveal pour faire des animation au texte  -->
+        <h1 class="display-1" [ngsReveal]="{
+        reset: true,
+        duration: 550,
+        easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)',
+        scale: 0.85
+      }">
+            Developpeur web
+        </h1>
+        <h2 class="display-2" [ngsReveal]="{
+        reset: true,
+        duration: 1500,
+        easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)',
+        scale: 0.85
+      }">
+            ERICK FRANCO
+        </h2>
+        <!--  Creation du bouton -->
+        <!-- <button class="btn btn-success btn-lg" [ngsReveal]="{
+        reset: true,
+        duration: 2000,
+        delay: 500,
+        easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)',
+        scale: 0.85}" (click)="scrollTo('contact')">
+      Contactez-moi</button> -->
+
+        <button class="animated fadeIn fast" (click)="scrollTo('contact')">
+      Contactez-moi
+    </button>
+    </div>
+</section>
