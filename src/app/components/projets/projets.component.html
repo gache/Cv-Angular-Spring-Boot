@@ -1,0 +1,29 @@
+<section class="py-3">
+    <div class="container">
+        <h2 class="text-uppercase" [ngsReveal]="{
+          reset: true,
+          duration: 2000,
+          interval: 600
+        }">Projets</h2>
+    </div>
+
+    <div class="container-flex">
+        <div class="card-columns">
+            <div class="card " *ngFor="let projet of listProjet" [ngsReveal]="{
+        reset: true,
+        duration: 2000,
+        interval: 600,
+        delay: 250,
+        easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)',
+        scale: 0.85
+      }">
+                <div class="card-body ">
+                    <h3 class="card-title">{{ projet.nom }}</h3>
+                    <h4> {{ projet.langage }} </h4>
+                    <p class="card-text">{{ projet.description }}</p>
+                    <a href="{{ projet.url }}" class="btn btn-primary" target="blank">Voir Github</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
