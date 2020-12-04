@@ -17,6 +17,7 @@ import { PropoMoiComponent } from './components/propo-moi/propo-moi.component';
 import { DetailExperienceComponent } from './components/detail-experience/detail-experience.component';
 import { AccueilComponent } from './components/accueil/accueil.component';
 import { ReseauxComponent } from './components/reseaux/reseaux.component';
+import { LangageInforComponent } from './components/langage-infor/langage-infor.component';
 
 @NgModule( {
   declarations: [
@@ -28,7 +29,8 @@ import { ReseauxComponent } from './components/reseaux/reseaux.component';
     DetailExperienceComponent,
     PropoMoiComponent,
     AccueilComponent,
-    ReseauxComponent
+    ReseauxComponent,
+    LangageInforComponent
   ],
   imports: [
     BrowserModule,
