@@ -2,136 +2,49 @@
     <div class="tt-overlay-bg">
         <div class="container-fl">
             <p class="display-4" [ngsReveal]="{
-                  reset: true,
-                  duration: 3000,
-                  interval: 600
-                  }">
+                    reset: true,
+                    duration: 3000,
+                    interval: 600
+                    }">
                 Je suis disponible pour toute réalisation d'un projet ou pour la collaboration à celui-ci.
             </p>
             <!-- <a href="#" class="btn btn-success btn-lg"> Contactez-moi</a> -->
         </div>
     </div>
 </section>
-<section>
-    <div class="container wrapper">
-        <h1 class="py-5" style="visibility: visible;" [ngsReveal]="{
-              reset: true,
-              duration: 2000,
-              interval: 600
-              }">
-            contactez-moi
-        </h1>
-
-        <form class="container" [formGroup]="formulaire" (ngSubmit)="changement()">
-            <div>
-                <div class="form-group row">
-                    <label class="col-1 col-form-label "> Nom </label>
-                    <div class="col-md-5">
-                        <input class="form-control col-9" type="text" placeholder="Nom" formControlName="nom" />
-                        <!-- Message erreur quand l'utilisateur ne rempli pas les critères  -->
-                        <div class="alert-danger col-9" *ngIf="nom.invalid && (nom.dirty || nom.touched)">
-
-                            <div class="containerMessageError" *ngIf="nom.errors.required">
-                                {{ messageAlertNom }}
-                            </div>
-
-                            <div class="containerMessageError" *ngIf="nom.errors.minlength">
-                                {{ messageNom2 }}
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="form-group row">
-                    <label class="col-1 col-form-label ">Prénom</label>
-                    <div class="col-md-5">
-                        <input class="form-control col-9" type="text" placeholder="Prénom" formControlName="prenom" />
-                        <!-- Message erreur quand l'utilisateur ne rempli pas les critères  -->
-                        <div class="alert-danger col-9" *ngIf="prenom.invalid && (prenom.dirty || prenom.touched)">
-
-                            <div class="containerMessageError" *ngIf="prenom.errors.required">
-                                {{ messageAlertPrenom }}
-                            </div>
-
-                            <div class="containerMessageError" *ngIf="prenom.errors.minlength">
-                                {{ messageNom2 }}
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<div class="pageContact">
+    <section id="formSupport">
+        <h2 class="titreContact">Contactez-moi</h2>
+        <form class="formulaireContact" action="" name="support" method="POST">
+            <div class="inputContact">
+                <label for="nom">Nom*</label>
+                <input type="text" name="nom" id="nom" class="input" placeholder="Nom" required>
+            </div>
+            <div class="inputContact">
+                <label for="prenom">Prenom*</label>
+                <input type="text" name="prenom" id="prenom" class="input" placeholder="Prenom" required>
+            </div>
+            <div class="inputContact">
+                <label for="email">Email* </label>
+                <input type="text" name="email" id="email" class="input" required placeholder="Email">
+            </div>
+            <div class="inputContact">
+                <label for="telephone">N° Téléphone</label>
+                <input type="tel" name="telephone" id="telephone" class="input" placeholder="Téléphone">
             </div>
 
-            <div class="form-group row">
-                <label class="col-1 col-form-label ">Email</label>
-                <div class="col-md-5">
-                    <input class="form-control col-9" type="email" placeholder="lille@gmail.com" formControlName="mail" />
-                    <!-- Message erreur quand l'utilisateur ne rempli pas les critères  -->
-                    <div class="alert-danger col-9" *ngIf="mail.invalid && (mail.dirty || mail.touched)">
-
-                        <div class="containerMessageError" *ngIf="mail.errors.required">
-                            {{ messageAlertMail }}
-                        </div>
-
-                        <div class="containerMessageError" *ngIf="mail.errors.minlength">
-                            {{ messageAlertCaracter }}
-                        </div>
-                        <div class="containerMessageError" *ngIf="(mail.dirty || mail.touched) && mail.invalid && mail.errors.pattern ">
-                            {{ messageAlertMail3 }}
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-            <div class="form-group row">
-                <label class="col-1 col-form-label ">Sujet</label>
-                <div class="col-md-5">
-                    <input class="form-control col-9" type="email" placeholder="Entretien d'embauche" formControlName="sujet" />
-                    <!-- Message erreur quand l'utilisateur ne rempli pas les critères  -->
-                    <div class="alert-danger col-9" *ngIf="sujet.invalid && (sujet.dirty || sujet.touched)">
-
-                        <div class="containerMessageError" *ngIf="sujet.errors.required">
-                            {{ messageAlertSujet }}
-                        </div>
-
-                        <div class="containerMessageError" *ngIf="sujet.errors.minlength">
-                            {{ messageNom2 }}
-                        </div>
-                    </div>
-                </div>
+            <div class="inputContact">
+                <label for="sujet">Sujet</label>
+                <input type="text" name="sujet" id="sujet" class="input" placeholder="sujet" required>
             </div>
 
-            <div class="form-group row ">
-                <label class="col-1 col-form-label message " for="message" rowspan="5">
-          Message</label>
-                <div class="col-md-5">
-                    <textarea class="form-control col-9 " id="message " rows="5" formControlName="message" placeholder="Nous aimerions vous contacter à fin de ....">
-                  </textarea>
-                    <!-- Message erreur quand l'utilisateur ne rempli pas les critères  -->
-                    <div class="alert-danger col-9" *ngIf="message.invalid && (message.dirty || message.touched)">
-
-                        <div class="containerMessageError" *ngIf="message.errors.required">
-                            {{ messageAlertMessage }}
-                        </div>
-
-                        <div class="containerMessageError" *ngIf="message.errors.minlength">
-                            {{ messageAlertCaracter }}
-                        </div>
-                    </div>
-                </div>
+            <div class="inputContact">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10" maxlength="1000" placeholder="Message..." class="textarea"></textarea>
             </div>
-
-            <div class="form-group row ">
-                <label class="col-1 col-form-label ">&nbsp;</label>
-                <div class="input-group col-md-9 ">
-                    <button type="submit" class="btn btn-primary ">
-            Envoyer
-          </button>
-                </div>
+            <div class="inputContact">
+                <input type="submit" value="Envoyer" class="btn">
             </div>
         </form>
-
-        {{ formulaire.valid }}
-    </div>
-</section>
+    </section>
+</div>

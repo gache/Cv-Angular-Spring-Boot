@@ -1,4 +1,4 @@
-section {
+body {
     background-color: #f2f2f2;
 }
 
@@ -10,160 +10,104 @@ section {
     overflow: hidden;
 }
 
-h1 {
-    font-size: 2.688em;
-    font-family: 'Lato', sans-serif;
+
+/* Page Contact */
+
+.pageContact {
+    max-width: 700px;
+    width: 100%;
+    margin: 20px auto;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.125);
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.pageContact .titreContact {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #fe0707;
+    text-transform: uppercase;
     text-align: center;
-    text-transform: capitalize;
-    color: #2c3e50;
-    position: relative;
+    margin: 10px 0px 20px;
+    border-bottom: 1px solid;
+    padding-bottom: 3px;
 }
 
-label {
-    text-align: justify;
-    text-transform: capitalize;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
-
-.message {
+.pageContact .formulaireContact {
+    width: 100%;
     margin-top: 30px;
-    margin-bottom: 30px;
 }
 
-
-/* Paragraphe */
-
-
-/* p{
-color: rgba(233, 33, 99, 1);
-font-family: 'Lato', sans-serif;
-} */
-
-
-/* Button */
-
-
-/* .btn-success{
-font-family: "Lato", sans-serif;
-text-transform: uppercase;
-font-size: 15px;
-border-radius: 80px;
-width: 160px;
-height: 60px;
-line-height: 40px;
-text-align: center;
-border: 3px solid #fff;
-display: inline-flex;
-text-decoration: none;
-color: #fff;
-position: relative;
-overflow: hidden;
-background: transparent;
+.pageContact .formulaireContact .inputContact {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
 }
 
-.btn-success::before {
-content: "";
-width: 100%;
-height: 100%;
-position: absolute;
-background: #fff;
-top: -100%;
-left: 0;
-z-index: -1;
-transition: 0.3s;
+.pageContact .formulaireContact .inputContact label {
+    width: 200px;
+    color: #757575;
+    margin-right: 10px;
+    font-size: 14px;
+    text-align: justify;
 }
 
-.btn-success::after {
-content: "";
-width: 100%;
-height: 100%;
-position: absolute;
-background: #fff;
-top: -100%;
-left: 0;
-z-index: -1;
-transition: 0.3s;
-}
-
-.btn-success:hover {
-color: #fff;
-}
-
-.btn-success:hover:before {
-top: 0;
-}
-.btn-success:hover:after {
-top: 0;
-} */
-
-
-/* Messages d'erreur du forms */
-
-.alert-danger {
-    color: rgba(233, 33, 99, 1);
-    border-color: rgba(233, 33, 99, 1);
-    margin-bottom: 5px;
-}
-
-.containerMessageError {
-    padding: 3px;
-}
-
-
-/* Bouton envoyer */
-
-.btn {
-    font-family: "Lato", sans-serif;
-    font-size: 17px;
-    border-radius: 80px;
+.pageContact .formulaireContact .inputContact .label {
+    width: 200px;
+    color: #757575;
+    margin-right: 10px;
+    font-size: 14px;
     text-align: center;
-    border: 3px solid rgba(233, 33, 99, 1);
-    display: inline-flex;
-    text-decoration: none;
-    color: rgba(233, 33, 99, 1);
-    position: relative;
-    overflow: hidden;
-    background: transparent;
-    /* transition: .3s; */
 }
 
-.btn::before {
-    content: '';
+.pageContact .formulaireContact .inputContact .input,
+.pageContact .formulaireContact .inputContact .textarea {
     width: 100%;
-    height: 100%;
-    position: absolute;
-    background: rgba(233, 33, 99, 1);
-    top: -100%;
-    left: 0;
-    z-index: -1;
-    transition: .3s;
+    outline: none;
+    border: 1px solid #d5dbd9;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
 }
 
-.btn::after {
-    content: '';
+.pageContact .formulaireContact .inputContact .textarea {
     width: 100%;
-    height: 100%;
-    position: absolute;
-    background: rgba(233, 33, 99, 1);
-    top: -100%;
-    left: 0;
-    z-index: -1;
-    transition: .3s;
+    height: 125px;
+    resize: none;
 }
 
-.btn:hover {
+.pageContact .formulaireContact .inputContact .btn {
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 0px;
+    background: #fe0707;
     color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+    margin: 30px;
 }
 
-.btn:hover:before {
-    top: 0;
+.pageContact .formulaireContact .inputContact .btn:hover {
+    background: #ffd658;
 }
 
-.btn:hover:after {
-    top: 0;
+.pageContact .formulaireContact .inputContact:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 320px) {
+    .pageContact .formulaireContact .inputContact {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .pageContact .formulaireContact .inputContact label {
+        margin-bottom: 5px;
+    }
+    .pageContact .formulaireContact .inputContact.terme {
+        flex-direction: row;
+    }
 }
