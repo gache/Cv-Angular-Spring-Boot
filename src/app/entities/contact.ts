@@ -1,8 +1,8 @@
 export interface ContactInterfacer {
   id: number;
+  email: 'string';
   nom: 'string';
   prenom: 'string';
-  email: 'string';
   sujet: 'string';
   message: 'string';
 
