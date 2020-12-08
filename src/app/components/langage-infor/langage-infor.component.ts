@@ -16,7 +16,7 @@ export class LangageInforComponent implements OnInit {
   ngOnInit (): void {
     this.langageService.getAllLangage().subscribe( resp => {
       this.listLangage = resp;
-      console.log( this.listLangage );
+      // console.log( this.listLangage );
 
     } )
   }

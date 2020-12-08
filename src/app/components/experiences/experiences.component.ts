@@ -17,7 +17,7 @@ export class ExperiencesComponent implements OnInit {
     this.experienceService.getAllExperience()
       .subscribe( resp => {
         this.listExperience = resp;
-        console.log( this.listExperience );
+        // console.log( this.listExperience );
       } );
 
   }

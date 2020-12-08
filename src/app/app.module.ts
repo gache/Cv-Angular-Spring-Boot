@@ -21,6 +21,7 @@ import { LangageInforComponent } from './components/langage-infor/langage-infor.
 import { ProjetsComponent } from './components/projets/projets.component';
 import { DiplomesComponent } from './components/diplomes/diplomes.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule( {
   declarations: [
@@ -42,7 +43,9 @@ import { ContactComponent } from './components/contact/contact.component';
     BrowserModule,
     HttpClientModule,
     NgsRevealModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     NgsRevealConfig,
