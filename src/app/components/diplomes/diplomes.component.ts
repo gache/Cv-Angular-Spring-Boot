@@ -16,7 +16,7 @@ export class DiplomesComponent implements OnInit {
   ngOnInit (): void {
     this.diplomeService.getAllDiplome().subscribe( resp => {
       this.listDiplomes = resp;
-      console.log( this.listDiplomes );
+      // console.log( this.listDiplomes );
     } );
   }
 
