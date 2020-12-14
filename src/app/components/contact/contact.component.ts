@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { ContactInterfacer } from 'src/app/entities/contact';
+import { ContactService } from '../../services/contact.service';
+import Swal from 'sweetalert2';
 import { AbstractControl, FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+
 
 
 @Component( {
@@ -9,7 +13,9 @@ import { AbstractControl, FormBuilder, FormControl, FormGroup, Validators } from
 } )
 export class ContactComponent implements OnInit {
 
-  constructor( private formBuilder: FormBuilder ) {
+
+  constructor( private formBuilder: FormBuilder,
+    private contactService: ContactService ) {
 
   }
 
@@ -31,18 +37,20 @@ export class ContactComponent implements OnInit {
 
   }
 
-  afficherValeur (): void {
-    const valeurInput = this.contactForm.value;
-    if ( this.contactForm.valid ) {
-      console.log( valeurInput.nom );
-      console.log( valeurInput.prenom );
-      console.log( valeurInput.email );
-      console.log( valeurInput.sujet );
-      console.log( valeurInput.message );
-    } else {
-      console.log( "Error" );
-
+  afficherValeur () {
+    let contact: ContactInterfacer = {
+      id: null,
+      email: this.contactForm.get( 'email' ).value,
+      nom: this.contactForm.get( 'nom' ).value,
+      prenom: this.contactForm.get( 'prenom' ).value,
+      sujet: this.contactForm.get( 'sujet' ).value,
+      message: this.contactForm.get( 'message' ).value
     }
+    console.log( contact );
+
+    this.contactService.registerMessage( contact ).subscribe( res => {
+      console.log( res );
+    } );
 
   }
 
