@@ -21,11 +21,11 @@ export class ContactService {
   }
 
   public registerMessage ( contact: ContactInterfacer ) {
-    return this.Http.post( `${this.url}/save`, contact )
+    return this.Http.post( `${this.url}/createContact`, contact )
   }
 
   // public getMessageId ( id: String ) {
-  //   return this.Http.get( `${this.url}${id}.json` )
+  //   return this.Http.get( `${this.url}${id}` )
   // }
 
 }
