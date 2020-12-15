@@ -12,7 +12,7 @@ export class ContactService {
 
   constructor( private Http: HttpClient ) { }
 
-  private url = "http://localhost:8080/contacts";
+  private url = "http://localhost:8080/api/contacts";
 
 
   public getAllMessage (): Observable<Array<ContactInterfacer>> {
