@@ -10,7 +10,7 @@ export class ExperiencesService {
 
   constructor( private Http: HttpClient ) { }
 
-  private url = "http://localhost:8080/api/parcour";
+  private url = "http://localhost:8080/experiences";
 
   public getAllExperience (): Observable<Array<ExperienceInterface>> {
     return this.Http.get<Array<ExperienceInterface>>( this.url );
