@@ -1,9 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+
 // imporation pour travailler avec le formulaire
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+
 // Importation pour faire petitions Http
 import { HttpClientModule } from '@angular/common/http';
+
 // Importation de la route
 import { AppRoutingModule } from './app-routing.module';
 
@@ -31,6 +35,7 @@ import { ProjetsAdminComponent } from './admin/projets-admin/projets-admin.compo
 import { LangagesAdminComponent } from './admin/langages-admin/langages-admin.component';
 import { ExperiencesAdminComponent } from './admin/experiences-admin/experiences-admin.component';
 import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.component';
+import { DiplomeFormComponent } from './admin/form/diplome-form/diplome-form.component';
 
 
 
@@ -56,6 +61,7 @@ import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.co
     LangagesAdminComponent,
     ExperiencesAdminComponent,
     PagenotfoundComponent,
+    DiplomeFormComponent,
   ],
   imports: [
     BrowserModule,
