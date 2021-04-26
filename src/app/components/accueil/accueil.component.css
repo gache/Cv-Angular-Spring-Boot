@@ -6,7 +6,7 @@ section {
 /* photo de fond */
 
 .photo {
-    background: url(../../../assets/img/photo1.jpg);
+    background: url(../../../assets/img/fond4.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;

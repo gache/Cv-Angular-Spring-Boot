@@ -12,7 +12,7 @@ export class ContactService {
 
   constructor( private Http: HttpClient ) { }
 
-  private url = "http://localhost:8080/api/contacts";
+  private url = "http://localhost:8080/api/messages";
 
 
   public getAllMessage (): Observable<Array<ContactInterfacer>> {
@@ -21,7 +21,7 @@ export class ContactService {
   }
 
   public registerMessage ( contact: ContactInterfacer ) {
-    return this.Http.post( `${this.url}/createContact`, contact )
+    return this.Http.post( `${this.url}/createMessage`, contact )
   }
 
   // public getMessageId ( id: String ) {

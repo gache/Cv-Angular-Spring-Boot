@@ -10,7 +10,7 @@ export class ProjetService {
 
   constructor( private Http: HttpClient ) { }
 
-  private url = "http://localhost:8080/api/projets";
+  private url = "http://localhost:8080/projets";
 
 
   public getAllProjets (): Observable<Array<ProjetInterface>> {

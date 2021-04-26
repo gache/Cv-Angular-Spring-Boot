@@ -26,6 +26,7 @@ import { LangageInforComponent } from './components/langage-infor/langage-infor.
 import { DetailExperienceComponent } from './components/detailExperience/detail-experience.component';
 
 
+
 @NgModule( {
   declarations: [
     AppComponent,
@@ -40,7 +41,7 @@ import { DetailExperienceComponent } from './components/detailExperience/detail-
     LangageInforComponent,
     ProjetsComponent,
     DiplomesComponent,
-    ContactComponent
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
