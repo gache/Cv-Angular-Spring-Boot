@@ -25,6 +25,7 @@ export class NavBarComponent implements OnInit {
     }
   }
 
+
   scrollTo ( id, ev ) {
     ev.preventDefault();
     this.scrollToParent.emit( id );

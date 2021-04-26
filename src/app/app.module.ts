@@ -24,8 +24,7 @@ import { DiplomesComponent } from './components/diplomes/diplomes.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { LangageInforComponent } from './components/langage-infor/langage-infor.component';
 import { DetailExperienceComponent } from './components/detailExperience/detail-experience.component';
-import { AdminCvComponent } from './components/admin/admin-cv/admin-cv.component';
-import { AdminContactComponent } from './components/admin/admin-contact/admin-contact.component';
+
 
 
 @NgModule( {
@@ -43,8 +42,6 @@ import { AdminContactComponent } from './components/admin/admin-contact/admin-co
     ProjetsComponent,
     DiplomesComponent,
     ContactComponent,
-    AdminCvComponent,
-    AdminContactComponent
   ],
   imports: [
     BrowserModule,

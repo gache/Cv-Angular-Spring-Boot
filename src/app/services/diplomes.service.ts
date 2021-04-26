@@ -10,7 +10,7 @@ export class DiplomesService {
 
   constructor( private Http: HttpClient ) { }
 
-  private url = "http://localhost:8080/diplomes";
+  private url = "http://localhost:8080/api/diplomes";
 
   public getAllDiplome (): Observable<Array<DiplomeInterface>> {
     return this.Http.get<Array<DiplomeInterface>>( this.url );

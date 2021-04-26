@@ -10,7 +10,7 @@ export class LangageInfoService {
 
   constructor( private Http: HttpClient ) { }
 
-  private url = "http://localhost:8080/api/langages";
+  private url = "http://localhost:8080/langages";
 
   public getAllLangage (): Observable<Array<LangageInterface>> {
     return this.Http.get<Array<LangageInterface>>( this.url );
