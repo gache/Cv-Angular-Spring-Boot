@@ -24,6 +24,13 @@ import { DiplomesComponent } from './components/diplomes/diplomes.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { LangageInforComponent } from './components/langage-infor/langage-infor.component';
 import { DetailExperienceComponent } from './components/detailExperience/detail-experience.component';
+import { NavbarAdminComponent } from './admin/navbar-admin/navbar-admin.component';
+import { DiplomeAdminComponent } from './admin/diplome-admin/diplome-admin.component';
+import { HomeAdminComponent } from './admin/home-admin/home-admin.component';
+import { ProjetsAdminComponent } from './admin/projets-admin/projets-admin.component';
+import { LangagesAdminComponent } from './admin/langages-admin/langages-admin.component';
+import { ExperiencesAdminComponent } from './admin/experiences-admin/experiences-admin.component';
+import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.component';
 
 
 
@@ -42,6 +49,13 @@ import { DetailExperienceComponent } from './components/detailExperience/detail-
     ProjetsComponent,
     DiplomesComponent,
     ContactComponent,
+    NavbarAdminComponent,
+    DiplomeAdminComponent,
+    HomeAdminComponent,
+    ProjetsAdminComponent,
+    LangagesAdminComponent,
+    ExperiencesAdminComponent,
+    PagenotfoundComponent,
   ],
   imports: [
     BrowserModule,

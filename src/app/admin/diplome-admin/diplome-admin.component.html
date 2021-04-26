@@ -1,0 +1,34 @@
+<app-navbar-admin></app-navbar-admin>
+
+<div class="card  mb-3 py-5 ">
+  <div class="card-body py-5">
+    <h2 class="card-title text-center"><strong>Liste de dîplomes</strong></h2>
+    <a class="btn btn-primary" href="#" role="button"><i class="fas fa-file" aria-hidden="true"></i> Nouveau</a>
+    <hr>
+    <table class="table table-hover table-striped">
+      <thead class="thead-light">
+      <tr class="table-active">
+        <th scope="col" class="text-center">Id</th>
+        <th scope="col" class="text-center">Nom</th>
+        <th scope="col" class="text-center">Description</th>
+        <th scope="col" class="text-center">Action</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let item of listDiplomes">
+        <th class="text-center" scope="row">{{ item.id }}</th>
+        <td class="text-center">{{ item.nomDiplome }}</td>
+        <td class="justify">{{ item.description }}</td>
+        <td>
+          <button class="btn btn-sm btn-outline-success"><i class="far fa-edit"></i></button>
+        </td>
+        <td>
+          <button class="btn btn-sm btn-outline-danger"><i class="far fa-trash-alt"></i></button>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+  <app-footer></app-footer>

@@ -1,0 +1,25 @@
+import { Component, OnInit } from '@angular/core';
+import { DiplomeInterface } from 'src/app/entities/diplome';
+import { DiplomesService } from 'src/app/services/diplomes.service';
+
+@Component( {
+  selector: 'app-diplome-admin',
+  templateUrl: './diplome-admin.component.html',
+  styleUrls: ['./diplome-admin.component.css']
+} )
+export class DiplomeAdminComponent implements OnInit {
+
+  listDiplomes: Array<DiplomeInterface>;
+
+  constructor( private diplomeService: DiplomesService ) { }
+
+
+
+  ngOnInit (): void {
+    this.diplomeService.getAllDiplome().subscribe( resp => {
+      this.listDiplomes = resp;
+      // console.log( this.listDiplomes );
+    } );
+  }
+
+}
