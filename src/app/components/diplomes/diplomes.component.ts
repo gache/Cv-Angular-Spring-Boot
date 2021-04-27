@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { DiplomeInterface } from 'src/app/entities/diplome';
 import { DiplomesService } from '../../services/diplomes.service';
+import { IDiplome } from '../../entities/diplome';
 
 @Component( {
   selector: 'app-diplomes',
@@ -9,7 +9,7 @@ import { DiplomesService } from '../../services/diplomes.service';
 } )
 export class DiplomesComponent implements OnInit {
 
-  listDiplomes: Array<DiplomeInterface>;
+  listDiplomes: IDiplome[];
 
   constructor( private diplomeService: DiplomesService ) { }
 

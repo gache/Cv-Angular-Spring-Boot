@@ -8,6 +8,8 @@ import { DiplomeAdminComponent } from './admin/diplome-admin/diplome-admin.compo
 import { ExperiencesAdminComponent } from './admin/experiences-admin/experiences-admin.component';
 import { LangagesAdminComponent } from './admin/langages-admin/langages-admin.component';
 import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.component';
+import { format } from 'path';
+import { CreateDiplomeComponent } from './admin/form/create-diplome/create-diplome.component';
 
 
 const ROUTES: Routes = [
@@ -18,6 +20,8 @@ const ROUTES: Routes = [
   { path: 'experiencesAdmin', component: ExperiencesAdminComponent },
   { path: 'langagesAdmin', component: LangagesAdminComponent },
   { path: 'detail/:id', component: DetailExperienceComponent },
+  { path: 'createDiplome/form', component: CreateDiplomeComponent },
+  { path: 'createDiplome/form/:id', component: CreateDiplomeComponent },
   { path: '', component: PagenotfoundComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'home' },
 ];
