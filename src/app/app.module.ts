@@ -36,6 +36,7 @@ import { LangagesAdminComponent } from './admin/langages-admin/langages-admin.co
 import { ExperiencesAdminComponent } from './admin/experiences-admin/experiences-admin.component';
 import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.component';
 import { CreateDiplomeComponent } from './admin/form/create-diplome/create-diplome.component';
+import { LoginComponent } from './utilisateurs/login/login.component';
 
 
 
@@ -62,6 +63,7 @@ import { CreateDiplomeComponent } from './admin/form/create-diplome/create-diplo
     ExperiencesAdminComponent,
     PagenotfoundComponent,
     CreateDiplomeComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,

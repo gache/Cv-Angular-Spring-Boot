@@ -35,13 +35,16 @@
 
             <div class="form-group row">
                 <div class="col-sm-6">
+<<<<<<< HEAD
                     <button class="btn btn-primary" role="button" (click)='create()' *ngIf="!diplome.id else elseBlock">Créer</button>
+=======
+                    <button class="btn btn-primary" role="button" (click)='create()' *ngIf="!diplome.id else elseBlock">créer</button>
+>>>>>>> ferick
                     <ng-template #elseBlock>
                         <button class="btn btn-primary" role="button" (click)='update()'>Editer</button>
                     </ng-template>
                 </div>
             </div>
-
         </form>
     </div>
 </div>

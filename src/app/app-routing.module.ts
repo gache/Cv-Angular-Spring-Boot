@@ -10,6 +10,7 @@ import { LangagesAdminComponent } from './admin/langages-admin/langages-admin.co
 import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.component';
 import { format } from 'path';
 import { CreateDiplomeComponent } from './admin/form/create-diplome/create-diplome.component';
+import { LoginComponent } from './utilisateurs/login/login.component';
 
 
 const ROUTES: Routes = [
@@ -22,6 +23,7 @@ const ROUTES: Routes = [
   { path: 'detail/:id', component: DetailExperienceComponent },
   { path: 'createDiplome/form', component: CreateDiplomeComponent },
   { path: 'createDiplome/form/:id', component: CreateDiplomeComponent },
+  { path: 'login', component: LoginComponent },
   { path: '', component: PagenotfoundComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'home' },
 ];
