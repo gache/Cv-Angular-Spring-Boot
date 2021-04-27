@@ -13,8 +13,9 @@ import swal from 'sweetalert2';
 } )
 export class CreateDiplomeComponent implements OnInit {
 
-  private diplome: Diplome = new Diplome();
-  private title: string = "Créer un Dîplome";
+  diplome: Diplome = new Diplome();
+  title: string = "Créer un Dîplome";
+  erreurs: string[];
 
   constructor( private diplomeService: DiplomesService,
     private router: Router,
@@ -42,8 +43,16 @@ export class CreateDiplomeComponent implements OnInit {
       respon => {
         this.router.navigate( ['/diplomesAdmin'] )
         swal.fire( 'Nouveau Dîplome', `Dîplome ${this.diplome.nomDiplome} a été créer avec satisfaction`, 'success' )
+      },
+      err => {
+        this.erreurs = err.error.errors as string[];
+        console.error( "code de l'erreur depuis le back:" + err.status );
+        console.error( err.error.errors );
+
       }
-    )
+
+
+    );
   }
 
 
@@ -52,6 +61,12 @@ export class CreateDiplomeComponent implements OnInit {
       resp => {
         this.router.navigate( ['/diplomesAdmin'] );
         swal.fire( 'Dîplome actualiser', `Dîplome ${this.diplome.nomDiplome} a été actualiser avec satisfaction`, 'success' )
+      },
+      err => {
+        this.erreurs = err.error.errors as string[];
+        console.error( "code de l'erreur depuis le back:" + err.status );
+        console.error( err.error.errors );
+
       }
     )
   }
