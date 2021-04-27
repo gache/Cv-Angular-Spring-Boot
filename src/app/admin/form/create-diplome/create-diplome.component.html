@@ -35,7 +35,7 @@
 
             <div class="form-group row">
                 <div class="col-sm-6">
-                    <button class="btn btn-primary" role="button" (click)='create()' *ngIf="!cliente.id else elseBlock">créer</button>
+                    <button class="btn btn-primary" role="button" (click)='create()' *ngIf="!diplome.id else elseBlock">Créer</button>
                     <ng-template #elseBlock>
                         <button class="btn btn-primary" role="button" (click)='update()'>Editer</button>
                     </ng-template>

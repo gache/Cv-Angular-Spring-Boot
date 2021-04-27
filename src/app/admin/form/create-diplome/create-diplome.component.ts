@@ -13,8 +13,8 @@ import swal from 'sweetalert2';
 } )
 export class CreateDiplomeComponent implements OnInit {
 
-  private diplome: Diplome = new Diplome();
-  private title: string = "Créer un Dîplome";
+  diplome: Diplome = new Diplome();
+  title: string = "Créer un Dîplome";
 
   constructor( private diplomeService: DiplomesService,
     private router: Router,

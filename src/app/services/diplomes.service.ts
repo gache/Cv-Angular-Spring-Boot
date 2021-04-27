@@ -32,8 +32,8 @@ export class DiplomesService {
   }
 
 
-  public update ( diplome: Diplome ): Observable<Diplome>{
-    return this.Http.put<Diplome>( `${this.url}/${diplome.id}`, diplome, { headers: this.httpHeaders }   );
+  public update ( diplome: Diplome ): Observable<Diplome> {
+    return this.Http.put<Diplome>( `${this.url}/${diplome.id}`, diplome, { headers: this.httpHeaders } );
   }
 
 
