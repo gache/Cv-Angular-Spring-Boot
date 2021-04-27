@@ -1,17 +1,20 @@
 import { Component, OnInit } from '@angular/core';
-import { DiplomesService } from '../../services/diplomes.service';
+
+import { DiplomesService } from 'src/app/services/diplomes.service';
 import { IDiplome } from '../../entities/diplome';
 
 @Component( {
-  selector: 'app-diplomes',
-  templateUrl: './diplomes.component.html',
-  styleUrls: ['./diplomes.component.css']
+  selector: 'app-diplome-admin',
+  templateUrl: './diplome-admin.component.html',
+  styleUrls: ['./diplome-admin.component.css']
 } )
-export class DiplomesComponent implements OnInit {
+export class DiplomeAdminComponent implements OnInit {
 
   listDiplomes: IDiplome[];
 
-  constructor( private diplomeService: DiplomesService ) { }
+  constructor( private diplomeService: DiplomesService ) {
+  }
+
 
   ngOnInit (): void {
     this.diplomeService.getAllDiplome().subscribe( resp => {
