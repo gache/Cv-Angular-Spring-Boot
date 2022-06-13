@@ -37,7 +37,7 @@ export class DiplomesService {
       } ) );
   }
 
-  // methode pour avoir un dîplome avec un id 
+  // methode pour avoir un dîplome avec un id
 
   public getDiplome ( id ): Observable<Diplome> {
     return this.Http.get<Diplome>( `${this.url}/${id}` ).pipe(
@@ -51,9 +51,6 @@ export class DiplomesService {
 
 
   public update ( diplome: Diplome ): Observable<Diplome> {
-<<<<<<< HEAD
-    return this.Http.put<Diplome>( `${this.url}/${diplome.id}`, diplome, { headers: this.httpHeaders } );
-=======
     return this.Http.put<Diplome>( `${this.url}/${diplome.id}`, diplome ).pipe(
       catchError( e => {
         if ( e.status == 400 ) {
@@ -65,7 +62,6 @@ export class DiplomesService {
         return throwError( e );
       } )
     );
->>>>>>> ferick
   }
 
 

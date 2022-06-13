@@ -15,10 +15,7 @@ export class CreateDiplomeComponent implements OnInit {
 
   diplome: Diplome = new Diplome();
   title: string = "Créer un Dîplome";
-<<<<<<< HEAD
-=======
   erreurs: string[];
->>>>>>> ferick
 
   constructor( private diplomeService: DiplomesService,
     private router: Router,
